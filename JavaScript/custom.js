@@ -100,7 +100,7 @@ document.getElementById("TestingSets").onclick = function(){
         
     }
     let weight = +prompt("Enter your weight");
-    if(isNaN(num2)){
+    if(isNaN(weight)){
         alert("num2 is not a number, Please try again")
         return
         
@@ -170,6 +170,16 @@ document.getElementById("Login").onclick = function() {
         alert("Invalid username or password. Please try again.");
     }
 };
+document.getElementById("ClearStatement").onclick = function(){
+    document.getElementById("Statement").innerHTML = "";
+
+}
+document.getElementById("ClearOutput").onclick = function(){
+    document.getElementById("Output").innerHTML = "";
+
+}
+
+
 // document.getElementById("TestingSets").onclick = function() {
 //     document.getElementById("Statement").innerHTML = "";
 //     document.getElementById("Output").innerHTML = "";
